@@ -5,8 +5,7 @@ const doc = {
     title: "Dev-API",
     description: "Description",
   },
-  host:"advertisement-app-1-gy0x.onrender.com",
-  // host: "localhost:8008",
+  host: "localhost:5000",
   schemes: ["https"],
   components: {
     securitySchemes: {
