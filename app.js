@@ -2,6 +2,9 @@ const express = require("express");
 require("dotenv").config(); //
 const connectDB = require("./config/dbConfig");
 const authRoutes = require("./routes/authRoutes");
+const swaggerUi = require("swagger-ui-express");
+const swaggerDocument = require("./swagger-output.json");
+
 const cors = require("cors");
 
 const app = express();
@@ -9,6 +12,8 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 app.use("/api/auth", authRoutes);
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+
 
 const startServer = async () => {
   try {
