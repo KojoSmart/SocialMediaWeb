@@ -5,7 +5,8 @@ const doc = {
     title: "Dev-API",
     description: "Description",
   },
-  host: "localhost:5000",
+  host: "socialmediaweb-bix1.onrender.com",
+//   host: "localhost:5000",
   schemes: ["https"],
   components: {
     securitySchemes: {
