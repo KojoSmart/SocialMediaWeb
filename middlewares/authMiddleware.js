@@ -1,5 +1,5 @@
 const jwt = require("jsonwebtoken");
-const User = require("../models/userModel");
+const User = require("../model/userModel");
 
 require("dotenv").config();
 
@@ -37,6 +37,4 @@ const authMiddlewareHandler = async(req, res, next)=>{
 //     }
 // }
 
-module.exports ={
-    authMiddlewareHandler,
-}
+module.exports = authMiddlewareHandler;
