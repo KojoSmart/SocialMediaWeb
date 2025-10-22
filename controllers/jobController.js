@@ -1,4 +1,4 @@
-const Job = require("../models/jobModel");
+const Job = require("../model/jobModel");
 const SocialUser = require("../model/userModel");
 
 // 🟢 Create Job Post
