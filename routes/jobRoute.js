@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const authMiddleware = rewuire("../middlewares/authMiddleware");
+const authMiddleware = require("../middlewares/authMiddleware");
 const {
   createJob,
   getAllJobs,
